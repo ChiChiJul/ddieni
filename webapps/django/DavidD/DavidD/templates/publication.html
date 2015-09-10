@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+<!-- Beginning of meta tag -->
+{% block meta_tag %}
+	<meta name="description" content="David Dieni: drummer, percussionist, teacher and owner of the SF Drum School assisted in revising George Stone's seminal book, Accents and Rebounds. Now available from Alfred Music Publishing." />
+	<meta name="keywords" content="" />
+	<title>David Dieni - Shows</title>
+{% endblock %}
+<!-- End of meta tag -->
+
+<!-- Beginning of navigation -->
+{% block url %}
+<ul>			
+		<li>
+			<a href="/index">Home</a>
+		</li>	
+		<li>
+			<a href="">About</a>				
+			<ul>
+				<li><a href="/bio">Bio</a></li>
+				<li><a href="/resume">Resume</a></li>					
+			</ul>
+		</li>	
+		<li>
+			<a href="">Video</a>
+			<ul>
+				<li><a href="/performance">Performance</a></li>
+				<li><a href="/teaching">Teaching</a></li>
+				<li><a href="/recording">Recording</a></li>
+				<!-- <li><a href="/product_review">Product_review</a></li> -->
+			</ul>
+		</li>	
+		<li><a href="/photo">Photo</a></li>
+		<li><a href="/store">Store</a></li>
+		<!-- <li>
+			<a href="">Lesson</a>
+			<ul>
+				<li><a href="/general">General</a></li>
+				<li><a href="/online">Online</a></li>
+			</ul>
+		</li>	 -->
+		<li>
+			<a href="">Web Share</a>
+			<ul>
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/testimonial">Testimonial</a></li>
+			</ul>
+		</li>					
+		<li id="publication">
+			<a href="">Publication</a>
+		</li>			
+		<li>
+			<a href="/contact">Contact</a>	
+		</li>	
+	</ul>
+{% endblock %}	
+<!-- End of navigation -->
+
+<!-- Beginning of left content -->
+{% block aside_content %}
+<div class="books">
+	<div id="intro">
+		<a href="http://www.amazon.com/gp/product/0984329315?ie=UTF8&creativeASIN=0984329315&linkCode=xm2&tag=wwwdaviddieni-20" target="_blank">
+			<img src="/../../../media/images/Accents_And_Rebounds.png" title="Accents and Rebounds">
+		</a>
+			<!-- <a href="http://www.stonepercussionbooks.com/accents---rebounds.html">Image from here</a> -->
+			<b id="title">Accents and Rebounds by George Stone</b><br>
+		<hr class="gray_line">
+		<p>	
+			I had the great pleasure of assisting the Stone family and Dom Famularo in creating the newly revised Accents and Rebounds. It’s now available through Alfred Publishing.<br>			
+		</p>
+	</div>
+</div>
+{% endblock %}
+<!-- End of left content -->
+
+<!-- Beginning of right content -->
+{% block main_content %}
+<div class="books">
+	<div id="content">
+		<p><b>Accents and Rebounds</b> was originally published in 1961 and dedicated to perhaps his greatest student, the legendary jazz drummer, Joe Morello. Like Stick Control, Stone’s earlier book from 1935, it was ground breaking and years ahead of it’s time.<br><br> 
+
+		If Stick Control was all about free stroke technique and playing with natural stick rebound, then Accents and Rebounds was the next step- understanding the very language of drumming through four basic strokes: the full stroke, downstroke, tap and upstroke. From these simple strokes and their combinations, you get everything that can ever be played with sticks. <br><br>
+
+		Accents and Rebounds completes Stone’s vision of drum technique. By mastering the four basic strokes, the drummer can play accents with an ease and power that before seemed unattainable. The routines in A&R also train the hands and wrists in a whipping technique famously called the Moeller technique. The drummer develops an ability to literally throw accents anywhere in the music. It actually seems like magic!<br><br>
+
+		The new and updated edition of Accents and Rebounds contains detailed explanation that was absent from the original. By using a simple notation system of arrows and dashes, we reveal the proper hand motions needed in each exercise. In other words, which of the four strokes to use while playing. <br><br>
+
+		Technique becomes a beautiful choreography of stroke motions! You gain the freedom to express what’s in you head and create music with all possible dynamic shadings. What else could any drummer want?<br><br>
+
+		Click on the book image to order Accents and Rebounds in Amazon!</p>
+	</div>
+</div>
+{% endblock %}
+<!-- End of right content -->

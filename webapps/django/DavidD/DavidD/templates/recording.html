@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+<!-- Beginning of meta tag -->
+{% block meta_tag %}
+	<meta name="description" content="Videos of David Dieni: drummer, percussionist, teacher and owner of the SF Drum School. Performing Xylophonia. Conducting the percussion ensemble at the San Francisco School of the Arts. " />
+	<meta name="keywords" content="David Dieni, drummer, percussionist, drum teacher, sf drum school, San Francisco drum school, xylophonia, San Francisco School of the Arts (SOTA), Percussion Ensemble" />
+	<title>David Dieni - Recording</title>
+{% endblock %}
+<!-- End of meta tag -->
+
+<!-- Beginning of navigation -->
+{% block url %}
+<ul>			
+		<li>
+			<a href="/index">Home</a>
+		</li>	
+		<li>
+			<a href="">About</a>				
+			<ul>
+				<li><a href="/bio">Bio</a></li>
+				<li><a href="/resume">Resume</a></li>					
+			</ul>
+		</li>	
+		<li>
+			<a href="">Video</a>
+			<ul>
+				<li><a href="/performance">Performance</a></li>
+				<li><a href="/teaching">Teaching</a></li>
+				<li id="recording"><a href="/recording">Recording</a></li>
+				<!-- <li><a href="/product_review">Product_review</a></li> -->
+			</ul>
+		</li>	
+		<li><a href="/photo">Photo</a></li>
+		<li><a href="/store">Store</a></li>
+		<!-- <li>
+			<a href="">Lesson</a>
+			<ul>
+				<li><a href="/general">General</a></li>
+				<li><a href="/online">Online</a></li>
+			</ul>
+		</li>	 -->
+		<li>
+			<a href="">Web Share</a>
+			<ul>
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/testimonial">Testimonial</a></li>
+			</ul>
+		</li>					
+		<li>
+			<a href="/publication">Publication</a>
+		</li>			
+		<li>
+			<a href="/contact">Contact</a>	
+		</li>	
+	</ul>
+{% endblock %}	
+<!-- End of navigation -->
+
+<!-- Beginning of left content -->
+{% block aside_content %}	
+	<div class="video">
+		<aside id="left">
+			<iframe width="420" height="236" src="//www.youtube.com/embed/CM9tS2p4nUQ" frameborder="0" allowfullscreen></iframe>
+			<p>MRomeo's Tune and Big Poppa off the Alex Wise Album- Blurred. Featuring David Dieni on Drums and Percussion.</p>
+			<hr class="gray_line">
+			
+      <iframe width="420" height="420" src="//www.youtube.com/embed/tokcne_beVs" frameborder="0" allowfullscreen></iframe>
+			<p>Carmina Burana selections with the San Francisco Concert Choral under John Bush. Two pianos and percussion. Featuring David Dieni on snare drum and percussion. Movements: Fortune Plango Vulnera, In Taberna Quando Sumas, Circa Mea Pectora
+			</p>
+		</aside>
+	</div>
+{% endblock %}	
+<!-- End of left content -->
+
+<!-- Beginning of right content -->
+{% block main_content %}
+<div class="video">
+	<aside id="right">
+			<iframe width="420" height="236" src="//www.youtube.com/embed/0Qvrqxito8k" frameborder="0" allowfullscreen></iframe>
+			<p>A selection of jazz tunes by Trio Dieni, featuring David Dieni on drums, Dave Austin on piano and Tommy Folen on bass. The song excerpts are: Days of Wine and Roses, All the Things You Are and At Last.</p>
+			<hr class="red_line">
+			
+			<iframe width="420" height="236" src="//www.youtube.com/embed/tGdLXwjyb7w" frameborder="0" allowfullscreen></iframe>
+			<p>Seasons of Oling is part of a multi movement fantasy series by author Ursula Le Guin and composer Elinor Armer. The full work is titled Uses of Music in Uttermost Parts and is recorded on the Koch International Label.
+
+			"Uses" explores a fantastic archipelago of islands where music forms the very fabric of life. On one island, music is food. On others, water and weaving. On Oling, music is weather. The chamber group bringing Oling to life consists of cello, viola, piano, percussion and narrator (LeGuin herself). 
+
+			It was a great experience playing percussion in this fruitful collaboration!</p>
+	</aside>
+</div>
+{% endblock %}	
+<!-- End of right content -->

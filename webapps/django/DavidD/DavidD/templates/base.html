@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		{% block meta_tag %}{% endblock %}
+	  <meta charset="utf-8">
+	  <script type="text/javascript" src="http://daviddieni.com/media/js/prototype.js"></script>
+		<script type="text/javascript" src="http://daviddieni.com/media/js/scriptaculous.js?load=effects,builder"></script>
+		<script type="text/javascript" src="http://daviddieni.com/media/js/lightbox.js"></script>
+		
+		<script type="text/javascript">
+
+			document.observe('dom:loaded', function () { 
+				 $$('.contact-link').each(
+					function(e){
+				 		Event.observe( e, 'click', function(){ 
+							var foo = ('lokes' + 'h.dhakar@' + 'gmail.c' +'om')				
+							window.location.href = 'mailto:' + foo; return false;
+						})	
+					 }
+				 );
+			});
+		</script>
+		
+		<!--[if lt IE 9]>
+		   <script>
+		      document.createElement('header');
+		      document.createElement('nav');
+		      document.createElement('section');
+		      document.createElement('article');
+		      document.createElement('aside');
+		      document.createElement('footer');
+		   </script>
+		<![endif]-->
+
+		<!--[if IE 8]>
+			<link rel="stylesheet" href="http://daviddieni.com/media/css/styleIE.css" type="text/css" media="screen" />
+			<link rel="stylesheet" href="http://daviddieni.com/media/css/showsIE.css" type="text/css" media="screen" />
+		<![endif]-->
+		
+	<!--[if !IE]><!-->
+		<link rel="stylesheet" href="http://daviddieni.com/media/css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="http://daviddieni.com/media/css/shows.css" type="text/css" media="screen" />
+	<!--<![endif]-->
+		<link rel="stylesheet" href="http://daviddieni.com/media/css/navBar.css" type="text/css" media="screen" />		
+		<link rel="stylesheet" href="http://daviddieni.com/media/css/lightbox.css" type="text/css" media="screen" />
+	  <link rel="icon" type="image/png" href="http://daviddieni.com/media/images/DavidD_icon2.png">		
+	{% block google_tracking %}{% endblock %}
+	</head>	
+	
+<!-- body -->
+	<body>
+		<div id="wrapper">		
+			<div id="banner">
+				<img src="http://daviddieni.com/media/images/homeBanner4.png" alt="David Dieni"/>
+			</div>
+<!-- header content -->
+			<header>
+			<!-- <div class="clear"></div> -->
+
+			  <aside id="logo">
+					<img src="http://daviddieni.com/media/images/DavidDieniLogo8.png" alt="SF Drum Teacher"/>
+				</aside>
+				<aside id="titles">
+							<!-- <title>Contact</title> -->
+					<img src="http://daviddieni.com/media/images/Titles5.png" alt="Drummer, Percussionist, Teacher" />
+				</aside>
+		
+				<aside id="connect">
+					<ul>
+					<li><a href="https://www.facebook.com/profile.php?id=573939137" target="_blank"><img src="http://daviddieni.com/media/images/fb_logo_s.png" alt="fb"></a></li>
+					<li><a href="http://www.linkedin.com/pub/david-dieni/10/30/22a" target="_blank"><img src="http://daviddieni.com/media/images/linkedin_logo_s.png" alt="linkedin">
+					</a></li>
+					<!-- <a href="" target="_blank"><img src="http://daviddieni.com/media/images/twitter_logo_s.png" alt="twitter"/></a> -->
+					<li><a href="http://www.yelp.com/biz/david-dienis-sf-drum-school-san-francisco-2" target="_blank"><img src="http://daviddieni.com/media/images/yelp_logo4.png" alt="yelp"></a><li>
+					</ul>					
+				</aside>
+
+				<nav>
+					{% block url %}{% endblock %}
+				</nav>
+				<!-- <p class="clear"></p> -->
+			
+				<!-- ************************ -->
+				<!-- ************************ -->
+				<!-- ************************ -->
+				<!-- Shows goes go here -->
+				<aside id="show_box">
+					<p id="venue"><strong>MY SHOW VENUE!</strong> <em>(please click event to see showing)</em>
+					</p>
+
+					<p id="show1">Coming Soon...</p>
+
+					<!-- <p id="show1">California Pops Orchestra big season opener: <br>
+						<a href="http://www.californiapops.org" target="_blank"> 
+						<b>Turn On The Heat!</b></a><br>
+					Sunday, October 14 at 3PM<br>
+					Venue: Smithwick Theatre, Foothill College
+					</p>  -->
+					<!-- <p id="show2"><a href="" target="_blank">Something Else</a></p>
+					<p id="show3"><a href="" target="_blank">San Francisco</a></p>
+					-->
+				</aside>
+				<!-- show box end here -->
+				<!-- ************************ -->
+				<!-- ************************ -->
+				<!-- ************************ -->
+			
+			
+			</header>
+
+			<!-- body content -->
+			<main>	
+				<div class="content">
+					<section class="aside_content">
+						{% block aside_content %}{% endblock %}
+					</section>
+					<!-- <div class="clear"></div> -->
+					<section class="main_content">
+						{% block main_content %}{% endblock %}
+					</section>
+					<div class="clearfix"></div>			
+	 			</div>	
+			</main>				
+			<!-- footer -->
+			<footer>
+				<p>&copy; 2013 David Dieni. All Rights Reserved <b id="white">|</b> <b>E:</b> <a href="mailto:David@DavidDieni.com">David@DavidDieni.com</a> <b id="white">|</b> <b>P:</b> 415.867.1724
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

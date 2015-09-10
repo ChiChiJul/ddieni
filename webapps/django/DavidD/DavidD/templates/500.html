@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+  <head>
+		{% block meta_tag %}{% endblock %}
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="/media/css/style.css" type="text/css" media="screen" />
+
+	  <link rel="icon" type="image/png" href="/media/images/DavidD_icon2.png">		
+		<title>Page unavailable</title>
+	</head>	
+	<body>
+		
+		<section id="wrapper">		
+			<div id="banner">
+				<img src="/media/images/homeBanner4.png"/>
+			</div>
+<!-- header content -->
+			<div id="page_header">
+
+			  <aside id="logo">
+					<img src="/media/images/DavidDieniLogo4.png"/>
+				</aside>
+				<aside id="titles">
+					<img src="/media/images/Titles3.png" alt="Drummer, Percussionist, Teacher" />
+					<!-- <ul>
+						<li><img src="/media/images/Titles4.png" /></li>
+						<li><a href="mailto:DavidDieni@SFDrumSchool.co">DavidDieni@SFDrumSchool.co</a><br></li>
+						<li>415.867.1724</li>
+					</ul> -->
+				</aside>
+			
+				<hgroup id="connect">
+					<a href="https://www.facebook.com/profile.php?id=573939137" target="_blank"><img src="/media/images/fb_logo_s.png" alt="fb"></a>
+					<a href="http://www.linkedin.com/pub/david-dieni/49/a40/348" target="_blank"><img src="/media/images/linkedin_logo_s.png" alt="linkedin"/>
+					</a>
+					<!-- <a href="" target="_blank"><img src="/media/images/twitter_logo_s.png" alt="twitter"/></a> -->
+					<a href="http://www.yelp.com/biz/david-dienis-sf-drum-school-san-francisco-2" target="_blank"><img src="/media/images/yelp_logo4.png" alt="yelp"/></a>					
+				</hgroup>
+
+				<nav>
+				<ul>			
+						<li>
+							<a href="/index">Home</a>
+						</li>	
+						<li>
+							<a href="">About</a>				
+							<ul>
+								<li><a href="/bio">Bio</a></li>
+								<li><a href="/resume">Resume</a></li>					
+							</ul>
+						</li>	
+						<li>
+							<a href="">Video</a>
+							<ul>
+								<li><a href="/performance">Performance</a></li>
+								<li><a href="/teaching">Teaching</a></li>
+								<li><a href="/recording">Recording</a></li>
+								<!-- <li><a href="/product_review">Product_review</a></li> -->
+							</ul>
+						</li>	
+						<li><a href="/photo">Photo</a></li>
+						<!-- <li>
+							<a href="">Lesson</a>
+							<ul>
+								<li><a href="/general">General</a></li>
+								<li><a href="/online">Online</a></li>
+							</ul>
+						</li>	 -->
+						<li>
+							<a href="">Web Share</a>
+							<ul>
+								<li><a href="/blog">Blog</a></li>
+								<li><a href="/testimonial">Testimonial</a></li>
+							</ul>
+						</li>					
+						<li>
+							<a href="/publication">Publication</a>
+						</li>			
+						<li>
+							<a href="/contact">Contact</a>	
+						</li>	
+					</ul>
+				</nav>
+			</div>
+
+			<!-- body content -->	
+			<div class="content">
+				<section class="aside_content">
+					{% block aside_content %}{% endblock %}
+				</section>
+				<section class="main_content">
+
+					<p>Sorry, but the requested page is unavailable due to a server hiccup.<br>
+						Our engineers have been notified, so please check back later.
+					</p>
+				</section>
+
+ 			</div>
+				<div class="clear"></div>
+			<!-- footer -->
+			<footer id="page_footer">
+				<ul>	
+					<li><b>&copy; 2012 David Dieni. All Rights Reserved</b></li>
+					<li>E: <a href="mailto:DavidDieni@SFDrumSchool.co">DavidDieni@SFDrumSchool.co</a> | P: 415.867.1724</li>
+				</ul>
+			</footer>
+
+		</section>	
+	</body>
+</html>

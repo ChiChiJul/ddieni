@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+<!-- Beginning of meta tag -->
+{% block meta_tag %}
+	<meta name="description" content="David Dieni is a drummer, percussionist and teacher with over twenty-five years experience playing rock, jazz, classical and theater. He's a graduate of the Oberlin and San Francisco conservatories. He runs the SF Drum School and performs throughout the Bay Area." />
+	<meta name="keywords" content="classical, jazz, rock, Oberlin Conservatory, Percussion, San Francisco Conservatory, principal percussionist, Napa Symphony, Sacramento Philharmonic, Stockton Symphony, California Pops Orchestra, timpanist,  Golden Gate Park Band, theater percussionist, teaching drum, San Francisco Drum, Percussion Studio, Meolloer, freestroke technique, timpani, San Francisco drum school" />
+	<title>David Dieni - Biography</title>
+{% endblock %}
+<!-- End of meta tag -->
+
+<!-- Beginning of navigation -->
+{% block url %}
+<ul>			
+		<li>
+			<a href="/index">Home</a>
+		</li>	
+		<li>
+			<a href="">About</a>				
+			<ul>
+				<li id="bio"><a href="">Bio</a></li>
+				<li><a href="/resume">Resume</a></li>					
+			</ul>
+		</li>	
+		<li>
+			<a href="">Video</a>
+			<ul>
+				<li><a href="/performance">Performance</a></li>
+				<li><a href="/teaching">Teaching</a></li>
+				<li><a href="/recording">Recording</a></li>
+				<!-- <li><a href="/product_review">Product_review</a></li> -->
+			</ul>
+		</li>	
+		<li><a href="/photo">Photo</a></li>
+		<li id="store"><a href="">Store</a></li>
+		<!-- <li>
+			<a href="">Lesson</a>
+			<ul>
+				<li><a href="/general">General</a></li>
+				<li><a href="/online">Online</a></li>
+			</ul>
+		</li>	 -->
+		<li>
+			<a href="">Web Share</a>
+			<ul>
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/testimonial">Testimonial</a></li>
+			</ul>
+		</li>					
+		<li>
+			<a href="/publication">Publication</a>
+		</li>			
+		<li>
+			<a href="/contact">Contact</a>	
+		</li>	
+	</ul>
+{% endblock %}	
+<!-- End of navigation -->
+	
+<!-- Beginning of left content -->
+{% block aside_content %}	
+<!-- David's Bio -->
+<article class="bio">
+	<p id="David_bio">
+			<img src="/../../../media/images/Bio2.png" title="biography"/><br>
+		An East Coast transplant, <b>David Dieni</b> has performed music from classical to jazz, rock and theater for over twenty five years. He received his Bachelor of Music from the Oberlin Conservatory and Masters in Percussion from the San Francisco Conservatory.<br><br>
+		He served as principal percussionist with the Napa Symphony for two years and assistant principal with both the Sacramento Philharmonic and Stockton Symphony for seven years. He’s currently percussionist with the California Pops Orchestra and timpanist with the Golden Gate Park Band. He has been fortunate to perform with the likes of Luciano Pavarotti, Dave Brubeck, Carol Channing and Judy Collins.<br><br>
+		As a theater percussionist, recent shows include La Cage Aux Folles with Broadway By The Bay, Evita at the Lesher Center for the Arts, Jacques Brel at the Marin Theatre Company, Into The Woods at CTA Crossroads Theatre, Ruthless the Musical with the California Cabaret.<br><br>
+	In 2011, Mr. Dieni was part of a team that worked on a new, revised edition of George Stone’s seminal work, Accents and Rebounds. The team included the likes of Danny Gottlieb and John Riley. The updated Accents and Rebounds is set for release on Alfred in March 2012.<br><br>
+	Mr. Dieni has recorded for Koch International on the Ursala LeGuin/Eli Armer collaboration, Uses of Music in Uttermost Parts, and is a recipient of a Meet the Composer grant for his own music.
+	</p>
+</article>
+<!-- End of David's Bio -->
+{% endblock %}
+<!-- End of left content -->
+
+<!-- Beginning of right content -->
+{% block main_content %}
+<div class="bio">
+	<aside id="video">
+		<iframe id ="xylophonia" width="420" height="315"	
+	src="http://www.youtube.com/embed/b1Pg0Qaj8e4" frameborder="0" allowfullscreen></iframe>
+		<p>Performing Xylophonia at the great Fourth of July Pops with the Stockton Symphony. This novelty xylophone solo by Joe Green, brother of the more famous George Hamilton Green, is a fun romp from the 1920's.</p>	
+		<hr class="red_line">  
+		<p>
+				<b>Mr. Dieni</b> maintains a busy teaching schedule at the San Francisco Drum and Percussion Studio and is currently writing a book on Moeller and Freetroke technique.
+		</p>		
+	</aside>
+</div>
+
+<!-- <div class="clear"></div> -->
+{% endblock %}
+<!-- End of right content -->

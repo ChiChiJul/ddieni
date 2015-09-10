@@ -1,0 +1,188 @@
+nav {
+  position: relative;
+/*  margin-left: 43.46em;*/
+/*	margin-right: 2.5em;*/
+  margin-left: 37.5em;
+/*  width: 43.75em;*/
+	width: 47em;
+/*  top: 9.75em;*/
+  top: -17.15em;
+}
+
+nav ul {
+  list-style: none;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* Clare floats */
+  width: 100%;
+  list-style-type: none;
+}
+
+nav ul li {
+  float: left;
+  margin-right: 1px;
+  position: relative;
+
+/* dropup */
+/*  display: inline-block;
+  height: 1.2em;*/
+  text-align: left;
+}
+
+nav ul a,
+nav ul li a {
+/*  float: left;*/
+  padding: 3px 10px 4px 10px;
+  line-height: 2px;
+/*  text-decoration: none;*/
+  font-size: 13px;
+  font-weight: bold;
+  background-color: white;
+  color: #333366;
+  border: solid 1px #ccc;
+  opacity: .95;
+  border-top-right-radius: 5px;  
+  border-bottom-left-radius: 5px;
+  text-decoration: none; 
+}
+
+nav ul a {
+/*  box-shadow: 10px 10px 5px #333;  */
+}
+
+/*nav a {
+  display: block;
+  padding: 5px;
+  color: #fff;
+  background: #333;
+  opacity: .9;  
+  text-decoration: none;
+}*/
+
+nav ul a:hover,
+nav ul li ul a:hover {
+  color: #fff;
+  background: orange;
+  text-decoration: none;
+/*  white-space: nowrap;*/
+  opacity: 1;
+  -webkit-transition: opacity 0.1s linear;
+}
+
+/*nav #home a,
+nav #david a,
+nav #david ul li a,
+nav #media a,
+nav #media ul li a,
+nav #lesson a,
+nav #lesson ul li a,
+nav #post a,
+nav #post ul li a,
+nav #publication a,
+nav #publication ul li a,
+nav #contact a {
+  color: orange;
+}*/
+
+
+nav ul li#index a,
+/*nav ul li a,*/
+nav ul li.about a,
+nav ul li.about ul li#bio a,
+nav ul li ul li#resume a,
+/*nav ul li#media a,
+nav ul li ul li#photos a,
+nav ul li ul li#videos a,*/
+nav ul li ul li#performance a,
+nav ul li ul li#teaching a,
+nav ul li ul li#recording a,
+nav ul li ul li#product_review a,
+nav ul li ul li#photo a,
+nav ul li ul li#store a,
+nav ul li#lesson a,
+nav ul li ul li#general a,
+nav ul li ul li#online a,
+nav ul li#post a,
+nav ul li ul li#blog a,
+nav ul li ul li#testimonial a,
+nav ul li#publication a,
+nav ul li#contact a {
+  background-position: right bottom;
+  color: orange;
+  cursor: default;
+  background-color: #fff;
+/*  opacity: .9;*/
+}
+
+/*li#david > li#bio {
+  border: 1px solid orange;
+}
+*/
+/*--- DROPDOWN -- */
+nav li ul {
+/*  background: transparent;*/
+  background: rgba(255, 255, 255, 0);
+  background-image: url(/media/images/onePX.png);
+  list-style: none;
+  position: absolute;
+  left: -9999px; /* Hide off-screen when not needed (replace display: none;) */
+
+  /* dropup */
+/*  bottom: .9em;*/
+/*  margin-top: 11px;*/
+}
+
+nav ul li ul li {
+  padding-top: 1px;
+  
+/*  margin-bottom: 15px;*/
+  margin-top: 11px;
+  float: none;
+/*  border: 1px red solid;*/
+}
+
+nav ul a {
+  white-space: nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+
+@-webkit-keyframes rise {
+  0% {
+/*    left: -9999px;*/
+    height: 0em;
+    opacity: 0;
+  }
+
+  50% {
+/*    left: -9999px;*/
+    height: 0em;
+    opacity: 0;    
+  }
+  
+  100% {
+/*    left: 0;*/
+    height: 1.2em;
+    opacity: 1;    
+  }
+}
+
+nav li:hover ul {
+/*  -webkit-animation: rise 1s 1;*/
+  left: 0;
+/*  z-index: 20;*/
+}
+
+nav li:hover a,
+nav li:hover ul a { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */ 
+  text-decoration: none; 
+}
+
+nav li:hover ul li a:hover { /* Here we define the most explicit hover states -- what happens when you hover each individual link. */
+  background: orange;
+}
+
+/*nav ul li a,
+nav ul li ul li#bio a,
+nav ul li ul li#resume a {
+  text-decoration: underline;
+  color: red;
+}*/

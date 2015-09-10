@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block meta_tag %}
+	<meta name="description" content="Contact page for David Dieni: drummer, percussionist, teacher and owner of the SF Drum School. Have questions or interested in setting up a lesson? Feel free to contact me!" />
+	<meta name="keywords" content="David Dieni, drummer, percussionist, drum teacher, sf drum school, San Francisco drum school, drum lessons" />
+	<title>David Dieni - Contact</title>
+{% endblock %}
+
+{% block url %}
+	<ul>			
+		<li>
+			<a href="/index">Home</a>
+		</li>	
+		<li>
+			<a href="">About</a>				
+			<ul>
+				<li><a href="/bio">Bio</a></li>
+				<li><a href="/resume">Resume</a></li>					
+			</ul>
+		</li>	
+		<li>
+			<a href="">Media</a>
+			<ul>
+				<li><a href="/photos">Photos</a></li>
+				<li><a href="/videos">Videos</a></li>
+			</ul>
+		</li>	
+		<!-- <li>
+			<a href="">Lesson</a>
+			<ul>
+				<li><a href="/general">General</a></li>
+				<li><a href="/online">Online</a></li>
+			</ul>
+		</li>	 -->
+		<li>
+			<a href="post">Web Share</a>
+			<ul>
+				<li><a href="">Blog</a></li>
+				<li><a href="/testimonials">Testimonials</a></li>
+			</ul>
+		</li>					
+		<li>
+			<a href="/publication">Publication</a>
+		</li>			
+		<li id="contact">
+			<a href="">Contact</a>	
+		</li>	
+	</ul>
+{% endblock %}	
+	
+{% block aside_content %}
+	<div class="contact">
+		<p class="line-height">
+			Have questions about my teaching, drumming or your specific goals? Want to set up an appointment for a lesson?<br> <br> 
+			Whatever it is, feel free to send me a message and I'll get back to you ASAP!
+		</p>
+		<hr class="style_two">
+		<p id="contact_info">
+			<b>M:</b> &nbsp; <a href="mailto:David@DavidDieni.com">David@DavidDieni.com</a><br>
+			<b>P:</b> &nbsp; 415.867.1724
+		</p>
+	</div>
+{% endblock %}
+	
+{% block main_content %}
+	<div class="contact">
+		<form action="/contact/" method="post">
+			{% for field in form %}
+			  <div class="fieldWrapper">
+					{% if field.errors %}
+					<ul class="errors">
+				  	<li><strong>{{ field.errors }}</strong></li>
+					</ul>
+					{% endif %}
+				  	<div class="label">{{ field.label_tag }}:</div> <div class="field">{{ field }}</div>
+				</div>
+			{% endfor %}
+			<p id="send"><input type="submit" value="Send message" /></p>
+			<p>{{ thanks }}</p>
+			<!-- <p id="send"><input type="submit" value="Send message" OnClick="document.write('Thank You! Your message has been sent.')" /></p> -->
+		</form>
+	</div>
+{% endblock %}

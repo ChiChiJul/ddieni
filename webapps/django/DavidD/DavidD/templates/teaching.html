@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+<!-- Beginning of meta tag -->
+{% block meta_tag %}
+	<meta name="description" content="Videos of David Dieni: drummer, percussionist, teacher and owner of the SF Drum School. Performing Xylophonia. Conducting the percussion ensemble at the San Francisco School of the Arts. " />
+	<meta name="keywords" content="David Dieni, drummer, percussionist, drum teacher, sf drum school, San Francisco drum school, xylophonia, San Francisco School of the Arts (SOTA), Percussion Ensemble" />
+	<title>David Dieni - Teaching</title>
+{% endblock %}
+<!-- End of meta tag -->
+
+<!-- Beginning of navigation -->
+{% block url %}
+<ul>			
+		<li>
+			<a href="/index">Home</a>
+		</li>	
+		<li>
+			<a href="">About</a>				
+			<ul>
+				<li><a href="/bio">Bio</a></li>
+				<li><a href="/resume">Resume</a></li>					
+			</ul>
+		</li>	
+		<li>
+			<a href="">Video</a>
+			<ul>
+				<li><a href="/performance">Performance</a></li>
+				<li id="teaching"><a href="/teaching">Teaching</a></li>
+				<li><a href="/recording">Recording</a></li>
+				<!-- <li><a href="/product_review">Product_review</a></li> -->
+			</ul>
+		</li>	
+		<li><a href="/photo">Photo</a></li>
+		<li><a href="/store">Store</a></li>
+		<!-- <li>
+			<a href="">Lesson</a>
+			<ul>
+				<li><a href="/general">General</a></li>
+				<li><a href="/online">Online</a></li>
+			</ul>
+		</li>	 -->
+		<li>
+			<a href="">Web Share</a>
+			<ul>
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/testimonial">Testimonial</a></li>
+			</ul>
+		</li>					
+		<li>
+			<a href="/publication">Publication</a>
+		</li>			
+		<li>
+			<a href="/contact">Contact</a>	
+		</li>	
+	</ul>
+{% endblock %}	
+<!-- End of navigation -->
+
+<!-- Beginning of left content -->
+{% block aside_content %}	
+	<div class="video">
+		<aside id="left">
+			<iframe width="420" height="315" src="http://www.youtube.com/embed/fpE8uMaX5MU" frameborder="0" allowfullscreen></iframe>
+			<p>Conducting the percussion ensemble at the San Francisco School of the Arts. My own arrangement of Soldier’s March, Little Piece and The Wild Horseman from Schuman’s Album for the Young.</p>	
+			<hr class="gray_line">
+			
+			<iframe width="420" height="236" src="//www.youtube.com/embed/vWx9ASWkPV8" frameborder="0" allowfullscreen></iframe>
+			<p>My beginning mallet ensemble group from the San Francisco School of the Arts (SOTA). Here I'm conducting them in Bach's Jesu, Joy of Man's Desiring. Arranged for marimba and vibraphone, four players.</p>
+		</aside>
+	</div>
+{% endblock %}	
+<!-- End of left content -->
+
+<!-- Beginning of right content -->
+{% block main_content %}
+<div class="video">
+	<aside id="right">
+    <iframe width="420" height="236" src="//www.youtube.com/embed/P8JkdY9myUQ" frameborder="0" allowfullscreen></iframe>
+		<p>Not yet three, my young student enjoys a bit of improvising at the timpani while I play along on drum set!</p>
+	</aside>
+</div>
+{% endblock %}	
+<!-- End of right content -->

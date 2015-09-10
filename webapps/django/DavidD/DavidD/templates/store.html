@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+<!-- Beginning of meta tag -->
+{% block meta_tag %}
+	<meta name="description" content="Contact page for David Dieni: drummer, percussionist, teacher and owner of the SF Drum School. Have questions or interested in setting up a lesson? Feel free to contact me!" />
+	<meta name="keywords" content="David Dieni, drummer, percussionist, drum teacher, sf drum school, San Francisco drum school, drum lessons" />
+	<title>David Dieni - Product Recommendation</title>
+{% endblock %}
+<!-- End of meta tag -->
+
+<!-- Beginning of navigation -->
+{% block url %}
+	<ul>			
+		<li>
+			<a href="/index">Home</a>
+		</li>	
+		<li>
+			<a href="">About</a>				
+			<ul>
+				<li><a href="/bio">Bio</a></li>
+				<li><a href="/resume">Resume</a></li>					
+			</ul>
+		</li>	
+		<li>
+			<a href="">Video</a>
+			<ul>
+				<li><a href="/performance">Performance</a></li>
+				<li><a href="/teaching">Teaching</a></li>
+				<li><a href="/recording">Recording</a></li>
+				<!-- <li><a href="/product_review">Product_review</a></li> -->
+			</ul>
+		</li>	
+		<li><a href="/photo">Photo</a></li>
+		<li id="store"><a href="">Store</a></li>
+		<!-- <li>
+			<a href="">Lesson</a>
+			<ul>
+				<li><a href="/general">General</a></li>
+				<li><a href="/online">Online</a></li>
+			</ul>
+		</li>	 -->
+		<li>
+			<a href="post">Web Share</a>
+			<ul>
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/testimonial">Testimonial</a></li>
+			</ul>
+		</li>					
+		<li>
+			<a href="/publication">Publication</a>
+		</li>			
+		<li>
+			<a href="/contact">Contact</a>	
+		</li>	
+	</ul>
+{% endblock %}	
+<!-- End of navigation -->
+	
+<!-- Beginning of left content -->
+{% block aside_content %}
+	<div class="store">
+		<div class="left">
+		</div>
+	</div>
+{% endblock %}
+<!-- End of left content -->
+	
+<!-- Beginning of right content -->
+{% block main_content %}
+	<div class="store">
+		<div class="right">
+			<iframe src="http://astore.amazon.com/wwwdaviddieni-20"></iframe>
+		</div>
+	</div>
+{% endblock %}
+<!-- End of right content -->
